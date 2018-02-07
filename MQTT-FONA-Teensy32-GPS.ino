@@ -23,7 +23,7 @@ Adafruit_FONA fona = Adafruit_FONA(FONA_RST);
 /************************* WiFi Access Point *********************************/
 
 // hologram doesn't use a username and password
-
+// this doesn't matter. my Adafruit_FONA_Library changes are hard coded for hologram :)
 #define FONA_APN       "hologram"
 #define FONA_USERNAME  ""
 #define FONA_PASSWORD  ""
@@ -31,8 +31,8 @@ Adafruit_FONA fona = Adafruit_FONA(FONA_RST);
 /************************* Adafruit.io Setup *********************************/
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883
-#define AIO_USERNAME    "baldengineer"
-#define AIO_KEY         ""
+#define AIO_USERNAME    "<your username>"
+#define AIO_KEY         "<your adafruit.io key>"
 
 // Setup the FONA MQTT class by passing in the FONA class and MQTT server and login details.
 Adafruit_MQTT_FONA mqtt(&fona, AIO_SERVER, AIO_SERVERPORT, AIO_USERNAME, AIO_KEY);
